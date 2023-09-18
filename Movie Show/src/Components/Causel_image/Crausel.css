@@ -1,0 +1,12 @@
+.crousel-poster{
+    border: 2px solid red;
+    height: 50vh;
+}
+.crousel{
+    height: 50vh;
+
+}
+.crousel img{
+    object-fit: cover;
+    background-position: cover;
+}
