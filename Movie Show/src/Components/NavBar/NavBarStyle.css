@@ -1,0 +1,44 @@
+.header{
+    border: 2px solid greenyellow;
+display: flex;
+justify-content: space-between;
+padding: 10px 5%;
+}
+
+
+/* ///////////// left  side //////////// */
+
+
+
+.mid-side{
+    border: 2px solid rgb(123, 13, 201);
+
+}
+.mid-side ul{
+    display: flex;
+}
+.mid-side ul li{
+    padding: 10px; 
+    list-style-type: none;
+
+
+}
+
+.mid-side ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+color: white;
+}
+
+
+
+/* ..................Right Side.............. */
+
+
+
+
+
+.right-side{
+    border: 2px solid rgb(41, 100, 183);
+    
+}
