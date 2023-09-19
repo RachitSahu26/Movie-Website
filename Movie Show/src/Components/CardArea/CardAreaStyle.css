@@ -1,4 +1,7 @@
 .Card-Area{
     border: 2px solid  aqua;
-    height: 100vh;
+    height: 320vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 80px;
 }

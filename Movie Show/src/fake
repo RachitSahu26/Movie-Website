@@ -37,7 +37,7 @@ left: 100px;
 
 
 
-{/* <img src={`https//image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`}/> */}
+{/**/}
                 
 
 
@@ -56,3 +56,13 @@ useEffect(() => {
         .then(res => res.json())
         .then(data => setPopularData(data.results))
 }, []);
+
+
+
+
+
+<div className="card-detail">
+     
+    <h4>{movieval ? movieval.original_title : ""}</h4>
+      <p>{movieval ? movieval.overview : ""}</p>
+    </div>
