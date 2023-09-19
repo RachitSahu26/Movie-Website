@@ -1,12 +1,33 @@
 .crousel-poster{
     border: 2px solid red;
-    height: 50vh;
+    height: 70vh;
 }
 .crousel{
-    height: 50vh;
+    height: 69vh;
 
 }
 .crousel img{
     object-fit: cover;
-    background-position: cover;
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+
+.poster-detail{
+    border: 2px solid rgb(36, 125, 110);
+position: absolute;
+top: 133px;
+    width: 911px;
+    left: 59px;
+}
+.poster-detail p{
+    font-size: 3rem;
+    /* color: black; */
+    color: white;
+    font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+
+}
+.poster-detail {
+    font-size: 1.5rem;
 }

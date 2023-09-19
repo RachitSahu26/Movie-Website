@@ -1,0 +1,58 @@
+.crousel-poster{
+    border: 2px solid red;
+    height: 70vh;
+}
+.crousel{
+    height: 69vh;
+
+}
+.crousel img{
+    object-fit: cover;
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+
+.poster-detail{
+    border: 2px solid rgb(36, 125, 110);
+position: absolute;
+top: 133px;
+width: 500px;
+left: 100px;
+}
+.poster-detail p,span{
+    font-size: 3rem;
+    /* color: black; */
+    color: white;
+    font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+{/* <img src={`https//image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`}/> */}
+                
+
+
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+const [popularData, setPopularData] = useState([]);
+
+useEffect(() => {
+    fetch("https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US")
+        .then(res => res.json())
+        .then(data => setPopularData(data.results))
+}, []);
