@@ -1,31 +1,22 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import "./CardAreaStyle.css";
 import Card from '../Cards/Card';
 import { Api } from '../../Utility/Api';
 
-function CardArea({ }) {
+function CardArea({ apiEndpoint }) {
+  const [cardData, setCardData] = useState([]);
 
-  const [CardData, setCardData] = useState([])
   useEffect(() => {
-    Api().then((data) => setCardData(data));
-  }, []);
+    Api(apiEndpoint).then((data) => setCardData(data)); // Pass the apiEndpoint prop to the API function
+  }, [apiEndpoint]);
+
   return (
     <div className='Card-Area'>
-      {
-        CardData.map((movieval,ind)=>{
-          return(
-            <>
-            <Card movieval={movieval}/>
-            
-            </>
-          )
-        })
-      }
-
- 
-
+      {cardData.map((movieval, ind) => (
+        <Card key={ind} movieval={movieval} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default CardArea
+export default CardArea;

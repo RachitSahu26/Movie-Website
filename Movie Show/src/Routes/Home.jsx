@@ -18,7 +18,7 @@ function Home() {
     return (
         <>
             <NavBar />
-            {/* Pass popularData as a prop to the Crousel component */}
+
             <Crousel popularData={popularData}  />
             <CardArea/>
         </>

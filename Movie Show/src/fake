@@ -66,3 +66,28 @@ useEffect(() => {
     <h4>{movieval ? movieval.original_title : ""}</h4>
       <p>{movieval ? movieval.overview : ""}</p>
     </div>
+
+
+
+
+
+
+
+
+
+
+    import React from 'react';
+import NavBar from '../Components/NavBar/NavBar';
+import CardArea from '../Components/CardArea/CardArea';
+
+function Upcoming() {
+  return (
+    <div>
+      <NavBar />
+      <h1>Upcoming Sec</h1>
+      <CardArea apiEndpoint="/upcoming" /> {/* Pass a prop to specify the API endpoint */}
+    </div>
+  );
+}
+
+export default Upcoming;
